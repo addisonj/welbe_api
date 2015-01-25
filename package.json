@@ -1,18 +1,25 @@
 {
   "name": "welbe_api",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "An API and CLI for welbe",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "bin": {
+    "welbe": "./bin/welbe.js"
+  },
+  "author": "Addison Higham",
   "license": "BSD-2-Clause",
   "dependencies": {
     "tough-cookie": "~0.12.1",
     "request": "~2.51.0",
     "std-error": "~0.2.2",
     "statuscode": "0.0.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "commander": "~2.6.0"
+  },
+  "devDependencies": {
+    "handlebars": "~2.0.0"
   }
 }

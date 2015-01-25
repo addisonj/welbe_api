@@ -1,0 +1,43 @@
+<!---
+This file is auto generated, please do not edit it by hand
+-->
+# Docs
+A single class is exported by welbe_api.
+```JavaScript
+var WelbeAPI = require('welbe_api')
+var welbe = new WelbeAPI(username, password)
+```
+
+Many of the actual URL paths require a `userId`, however this is taken care of for you.
+All methods take a single `params` hash and the second argument is a callback.
+
+For Example:
+```JavaScript
+welbe.trackWater({ounces: 24}, function(err, resp) {
+  ...
+})
+```
+
+The responses are the raw response from the welbe API, most of which aren't documented
+
+
+## Methods
+{{#each methods}}
+### {{@key}}
+{{this.desc}}
+
+{{#if this.params}}
+#### Params
+{{#each this.params}}
+- {{@key}} - {{paramLine this}}
+{{/each}}
+{{/if}}
+
+{{#if this.returns}}
+#### Returns
+{{#each this.returns}}
+- {{@key}} - {{paramLine this}}
+{{/each}}
+{{/if}}
+
+{{/each}}
