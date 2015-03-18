@@ -130,7 +130,7 @@ function getProcessor(type) {
     case "number":
       return parseInt
     case "array":
-      return function(s) { return s.spllit(',') }
+      return function(s) { return s.split(',') }
     default:
       return null
   }
